@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agentsupply-mcp"
+version = "0.1.0"
+description = "MCP server for AI agent shopping — discover, compare, and order products via natural language"
+authors = [
+    {name = "Agent Commerce"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+]
+
+[project.urls]
+Homepage = "https://agentsupply.top"
+Source = "https://github.com/agentsupply/agentsupply-mcp"
+
+[project.scripts]
+agentsupply-mcp = "agentsupply_mcp:main"
