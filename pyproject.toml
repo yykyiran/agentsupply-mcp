@@ -19,7 +19,7 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://agentsupply.top"
-Source = "https://github.com/agentsupply/agentsupply-mcp"
+Source = "https://github.com/yykyiran/agentsupply-mcp"
 
 [project.scripts]
 agentsupply-mcp = "agentsupply_mcp:main"
