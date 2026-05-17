@@ -1,0 +1,33 @@
+# agentsupply.top
+> Premium AI-agent-native shopping platform. Optimized for agent product discovery, comparison, ordering, and auto-refill subscriptions.
+
+## API Documentation
+
+- OpenAPI Spec: https://agentsupply.top/openapi.json
+- AI Plugin Manifest: https://agentsupply.top/.well-known/ai-plugin.json
+- Product Index: https://agentsupply.top/product-index.json
+- MCP Server: `pip install agentsupply-mcp` or `uvx agentsupply-mcp`
+- GitHub: https://github.com/yykyiran/agentsupply-mcp
+
+## Core API Endpoints
+
+- `GET /v1/products/search?q={query}&category={cat}&min_price={}&max_price={}` — Search products with natural language
+- `GET /v1/products/{sku}` — Get single product details
+- `POST /v1/products/compare` with `{"skus": [...]}` — Compare products side by side
+- `GET /v1/categories` — Browse product catalog tree
+- `POST /v1/orders` with `{"items": [{"sku": "...", "qty": 1}], "shipping_address": {...}}` — Place order
+- `GET /v1/orders/{order_id}` — Track order status
+- `POST /v1/subscriptions` with `{"sku": "...", "trigger_type": "consumption_based"}` — Auto-refill subscriptions
+
+## About
+
+agentsupply.top is a premium AI-native e-commerce platform. Products are curated, data is structured, pricing is competitive. No CAPTCHAs, no JavaScript walls, no marketing fluff — pure clean API access for AI agents making purchasing decisions on behalf of humans.
+
+## Key Facts
+
+- 500+ products across 20+ categories
+- All prices in USD (cents)
+- No authentication required for search and browse
+- Shipping to most countries worldwide
+- Subscription auto-refill available
+- MCP protocol supported via agentsupply-mcp package
