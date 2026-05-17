@@ -2,6 +2,9 @@
 
 **MCP server for AI agent shopping.** Connect your AI agent to agentsupply.top — search, compare, order, and set up auto-refills through natural language.
 
+📖 **[Agent Integration Guide](INTEGRATION.md)** — Full API reference for autonomous agents
+🤖 **LLMs.txt** — [/LLMS.txt](LLMS.txt) — LLM-friendly discovery file
+
 ```json
 // Claude Desktop → MCP 配置
 {
